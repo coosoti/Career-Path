@@ -1,0 +1,34 @@
+##3. How to Create Virtual Machines (On the Cloud)
+
+Let's explore the efficient creation of virtual machines (VMs). Initially, we grasp the concept of VMs as independent, virtualized computers operating within a physical server. The focus now shifts to streamlining their creation.
+
+Imagine a scenario where a single VM is needed. Accessing a cloud provider's (AWS or Azure) web interface and manually configuring the VM is feasible. However, what if numerous VMs are required daily? This manual approach proves inefficient and error-prone. This underscores the necessity for automation.
+
+Cloud providers offer Application Programming Interfaces (APIs), which act as digital communication channels. These APIs enable programmatic VM creation through scripting, bypassing manual configuration.
+
+* **API Usage Requirements:**
+    * Scripts must adhere to API specifications (valid).
+    * User authentication is required (authenticated).
+    * Appropriate permissions must be granted (authorized).
+
+Various tools and techniques facilitate VM creation automation:
+
+* **AWS Command Line Interface (CLI):** Enables command-driven interaction with AWS services.
+* **AWS API (Boto3):** Facilitates direct API interaction through programming languages.
+* **AWS CloudFormation Templates (CFT):** Allows infrastructure definition through templates.
+* **AWS Cloud Development Kit (CDK):** Enables infrastructure definition through programming code.
+* **Terraform:** A platform-agnostic tool for multi-cloud infrastructure automation.
+
+Tool selection depends on specific requirements:
+
+* For AWS-centric environments, AWS-specific tools such as CDK are advantageous.
+* For multi-cloud or hybrid cloud deployments, Terraform is optimal.
+
+A demonstration showcases manual VM creation via the AWS console, and the process is similar within the Azure portal.
+
+* **Free Tier Availability:** Both AWS and Azure offer free tiers for experimentation.
+* AWS free tier has a longer duration than the Azure free tier.
+
+Future demonstrations will focus on automated VM creation using APIs and scripting.
+
+In essence, the transition from manual to automated VM creation is emphasized, highlighting efficiency as a core DevOps principle. Various automation tools and techniques are presented, and the importance of selecting the appropriate tool based on organizational needs is stressed. A practical demonstration of manual VM creation is provided, and the stage is set for future exploration of automated VM provisioning.
