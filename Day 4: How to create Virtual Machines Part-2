@@ -1,0 +1,72 @@
+## DevOps Zero to Hero: Day 4 - Structured Notes
+
+**Introduction:**
+
+* This session builds upon the previous day's discussion of Virtual Machines (VMs), focusing on practical creation and automation.
+* The session aims to:
+    * Demonstrate how to create VMs on AWS and Azure using their respective UIs.
+    * Explain the importance of automation in VM provisioning.
+    * Introduce different methods for automating VM creation, including CLI, API, and Infrastructure as Code (IaC) tools.
+    * Highlight the concept of hybrid cloud and its relevance to IaC tool selection.
+
+**Subtopics:**
+
+1.  **Manual VM Creation via Cloud Provider UIs:**
+    * **AWS:**
+        * Access the AWS Management Console via `signin.aws.amazon.com`.
+        * Navigate to the EC2 service.
+        * Launch a new EC2 instance.
+        * Configure instance details:
+            * Name.
+            * Operating system (e.g., Ubuntu).
+            * Instance type (free tier eligible for practice).
+            * Key pair (for SSH access).
+        * Launch the instance.
+    * **Azure:**
+        * Access the Azure portal via `portal.azure.com`.
+        * Create a new virtual machine resource.
+        * Configure VM details similar to AWS.
+        * Azure integrates with GitHub for easy sign-up.
+        * Azure free tier has a shorter duration compared to AWS.
+    * **Key Pair:** A security credential used to securely access the virtual machine via SSH.
+
+2.  **The Importance of Automation:**
+    * Manual VM creation is inefficient for large-scale deployments.
+    * Automation improves efficiency and reduces manual errors.
+    * DevOps emphasizes automation to streamline infrastructure provisioning.
+    * Automation is especially important when dealing with repetitive tasks.
+
+3.  **Methods for Automating VM Creation:**
+    * **Cloud Provider CLIs (Command-Line Interfaces):**
+        * AWS CLI allows scripting VM creation via command-line.
+        * Azure CLI provides similar functionality for Azure.
+    * **Cloud Provider APIs (Application Programming Interfaces):**
+        * AWS EC2 API enables programmatic VM creation using code (e.g., Python with boto3 library).
+        * Azure Resource Manager API offers similar capabilities for Azure.
+    * **Infrastructure as Code (IaC) Tools:**
+        * **CloudFormation Templates (CFT) for AWS:**
+            * Declarative templates define desired infrastructure.
+            * AWS creates resources based on the template.
+        * **Terraform:**
+            * Open-source IaC tool that supports multiple cloud providers.
+            * Enables consistent infrastructure management across AWS, Azure, Google Cloud, and others.
+        * **AWS Cloud Development Kit (CDK):**
+            * Allows defining AWS infrastructure using familiar programming languages.
+            * Offers tight integration with AWS services.
+            * CDK is a proprietary tool of AWS, while terraform is open source.
+
+4.  **Hybrid Cloud and IaC Tool Selection:**
+    * **Hybrid Cloud:** An environment that combines on-premises infrastructure with public cloud resources.
+    * Organizations adopting hybrid cloud often use Terraform for multi-cloud infrastructure management.
+    * For organizations exclusively using a single cloud provider, cloud-specific tools (e.g., CDK, CFT, Azure Resource Manager) may offer advantages.
+    * Cloud-specific tools offer early access to new features and services.
+    * Example: An organization using both AWS and Google Cloud might use Terraform, while an organization exclusively on AWS might use CDK.
+
+**Conclusion:**
+
+* Manual VM creation is suitable for learning, but automation is essential for production environments.
+* Cloud providers offer various tools for automating VM provisioning.
+* The choice of automation tool depends on the organization's cloud strategy and requirements.
+* Hybrid cloud architectures often favor multi-cloud IaC tools like Terraform.
+* Understanding the different automation approaches is crucial for DevOps engineers.
+* Next sessions will demonstrate practical automation techniques for VM creation.
