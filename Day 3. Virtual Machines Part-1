@@ -1,0 +1,57 @@
+## DevOps Zero to Hero: Day 3 - Structured Notes
+
+**Introduction:**
+
+* This session introduces the concept of Virtual Machines (VMs) and their importance in DevOps.
+* The session aims to:
+    * Explain the difference between physical servers and virtual machines.
+    * Define hypervisors and their function.
+    * Illustrate how cloud providers utilize VMs.
+    * Emphasize the efficiency gains achieved through virtualization.
+
+**Subtopics:**
+
+1.  **Physical Servers vs. Virtual Machines:**
+    * **Physical Servers:**
+        * Tangible hardware devices that host applications.
+        * Resources (CPU, RAM, storage) are dedicated to a single operating system.
+        * Example: A physical server purchased from HP or IBM.
+    * **Virtual Machines (VMs):**
+        * Software-based simulations of physical computers.
+        * Multiple VMs can run on a single physical server.
+        * Each VM has its own operating system, CPU, RAM, and storage, logically isolated from others.
+        * They are a logical partition of a physical server.
+        * VMs enable efficient resource utilization.
+
+2.  **Hypervisors:**
+    * Software that creates and manages virtual machines.
+    * Acts as an intermediary between the physical hardware and the VMs.
+    * Enables the logical isolation of VMs on a single physical server.
+    * Popular hypervisors include VMware and Xen.
+    * The hypervisor is what allows the physical server to be broken up into logical virtual machines.
+
+3.  **Virtualization in Cloud Computing:**
+    * Cloud providers (e.g., AWS, Azure, Google Cloud) use virtualization to offer on-demand computing resources.
+    * They maintain large data centers with numerous physical servers.
+    * Hypervisors are installed on these physical servers.
+    * When a user requests a VM, the hypervisor allocates resources from a physical server to create the VM.
+    * Users access VMs remotely via IP addresses and key pairs.
+    * Regions and data centers are built to reduce latency. Latency is the delay between a user request and a server response.
+    * Example: An AWS data center in Mumbai hosts physical servers with hypervisors, enabling users in India to access VMs with low latency.
+    * EC2 instance is the name amazon gives to its virtual machines.
+
+4.  **Efficiency Gains with Virtualization:**
+    * Virtualization maximizes resource utilization by allowing multiple VMs to run on a single physical server.
+    * Reduces hardware costs and energy consumption.
+    * Enables scalability and flexibility in application deployment.
+    * Cloud providers leverage virtualization to serve millions of users efficiently.
+    * It allows for logical isolation, so that different applications and users do not interfere with each other.
+    * Example: Instead of having one application per physical server, multiple applications can run on VMs within a single physical server.
+
+**Conclusion:**
+
+* Virtual machines are a fundamental technology in modern IT and DevOps.
+* Hypervisors play a crucial role in enabling virtualization.
+* Cloud providers utilize VMs to deliver scalable and cost-effective computing resources.
+* Virtualization significantly improves resource utilization and efficiency.
+* The use of virtual machines has revolutionized the way that applications are deployed and managed.
